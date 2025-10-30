@@ -1,24 +1,25 @@
 {
-  "name": "playlist-generator-server",
+  "name": "backend",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/juliahnkim/playlist-generator-server#readme",
-  "bugs": {
-    "url": "https://github.com/juliahnkim/playlist-generator-server/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/juliahnkim/playlist-generator-server.git"
-  },
-  "license": "ISC",
-  "author": "",
-  "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js"
   },
+  
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
+    "axios": "^1.13.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
   }
 }
