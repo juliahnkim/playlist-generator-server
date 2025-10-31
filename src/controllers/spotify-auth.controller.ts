@@ -1,14 +1,9 @@
-// src/controllers/spotify-auth.controller.ts
-
 /**
- * Spotify Auth Controller (Cookie flow)
+ * Spotify Auth Controller
  * ------------------------------------
  * - GET  /auth/login     → builds /authorize URL (with PKCE) and redirects
  * - GET  /auth/callback  → exchanges code+verifier, stores tokens in httpOnly cookies, redirects app
- *
- * Notes:
- * - We never return tokens in JSON. Cookies are httpOnly+secure to mitigate XSS.
- * - If your frontend is on a different origin, configure CORS with credentials and SameSite correctly.
+ * - POST /auth/refresh   → uses refresh token cookie to get new access token, updates cookies
  */
 
 import type { Request, Response, CookieOptions } from "express";
