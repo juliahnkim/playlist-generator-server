@@ -230,3 +230,4 @@ export const refresh = async (req: Request, res: Response) => {
   }
 };
 
+export const refreshToken = refresh;

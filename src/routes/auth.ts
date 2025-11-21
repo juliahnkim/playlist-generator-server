@@ -1,5 +1,5 @@
 import express from "express";
-import { login, callback, refreshToken } from "../controllers/spotify-auth.controller.ts"
+import { login, callback, refreshToken } from "../controllers/spotify-auth.controller.js"
 
 const router = express.Router();
 

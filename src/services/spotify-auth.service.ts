@@ -8,7 +8,7 @@ import axios, { AxiosResponse } from "axios";
 import {
     SpotifyTokenResponse,
     SpotifyErrorResponse
-} from "../types/spotify.ts";
+} from "../types/spotify.js";
 
 const TOKEN_URL = "https://accounts.spotify.com/api/token";
 
